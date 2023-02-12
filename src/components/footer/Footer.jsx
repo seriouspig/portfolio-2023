@@ -1,23 +1,29 @@
 import React from "react";
-import PageLinks from "./PageLinks";
-import SocialLink from "./SocialLink";
+import PageLinks from "../links/PageLinks";
+import SocialLinks from "../links/SocialLinks";
 import { socialLinks } from "../../data";
+import classes from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className="section footer">
-      <PageLinks parentClass="footer-links" itemClass="footer-link" />
+    <div className={classes["footer-container"]}>
+    <footer className={classes[("section", "footer")]}>
 
-      <ul className="footer-icons">
-        {socialLinks.map((link) => {
-          return <SocialLink key={link.id} {...link} itemClass="footer-icon" />;
-        })}
-      </ul>
-      <p className="copyright">
-        copyright &copy; Backroads travel tours company
-        <span id="date">{new Date().getFullYear()}</span>. all rights reserved
-      </p>
+        <p className={classes.copyright}>
+          Piotr Gryko &copy;
+          <span id="date">{new Date().getFullYear()}</span>
+        </p>
+        <PageLinks
+          parentClass={classes["footer-links"]}
+          itemClass={classes["footer-link"]}
+        />
+        <SocialLinks
+          parentClass={classes["footer-icons"]}
+          itemClass={classes["footer-icon"]}
+        />
+
     </footer>
+    </div>
   );
 };
 

@@ -64,7 +64,7 @@ nav {
 .links-container {
   height: 0;
   overflow: hidden;
-  background:hsla(210, 36%, 96%, 80%);
+  background:hsla(210, 36%, 96%, 90%);
   transition: var(--transition);
 }
 .show-container {
@@ -87,6 +87,7 @@ nav {
   }
   .links-container {
     height: auto !important;
+    background:var(--clr-white);
   }
   .links {
     display: flex;

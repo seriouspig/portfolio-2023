@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useLayoutEffect } from "react";
 import { FaBars, FaWindowClose } from "react-icons/fa";
-import { links, social } from "../../data";
+import { pageLinks, socialLinks } from "../../data";
 import logo from "../../assets/logos/logo.svg";
 import classes from "./Navbar.module.css"
 
@@ -45,7 +45,7 @@ const Navbar = () => {
           </div>
           <div className={classes["links-container"]} ref={linksContainerRef}>
             <ul className={classes.links} ref={linksRef}>
-              {links.map((link) => {
+              {pageLinks.map((link) => {
                 const { id, url, text } = link;
                 return (
                   <li key={id}>
@@ -56,7 +56,7 @@ const Navbar = () => {
             </ul>
           </div>
           <ul className={classes["social-icons"]}>
-            {social.map((socialIcon) => {
+            {socialLinks.map((socialIcon) => {
               const { id, url, icon } = socialIcon;
               return (
                 <li key={id}>

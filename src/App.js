@@ -5,6 +5,7 @@ import Home from "./components/pages/home/Home";
 import About from "./components/pages/about/About";
 import Projects from "./components/pages/projects/Projects";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route exact path="/projects" element={<Projects />} />
         <Route exact path="/resume" element={<Resume />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }

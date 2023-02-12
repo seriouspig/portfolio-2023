@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const SocialLink = (props) => {
   return (
@@ -9,10 +9,10 @@ const SocialLink = (props) => {
         rel="noreferrer"
         className={props.itemClass}
       >
-        <i className={props.icon}></i>
+        {props.icon}
       </a>
     </li>
   );
-}
+};
 
-export default SocialLink
+export default SocialLink;
