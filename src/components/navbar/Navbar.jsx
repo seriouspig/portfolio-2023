@@ -32,40 +32,42 @@ const Navbar = () => {
     }
   }, [showLinks]);
   return (
-    <nav >
-      <div className={classes["nav-center"]}>
-        <div className={classes["nav-header"]}>
-          <div className={classes["logo-container"]}>
-            <img src={logo} className={classes.logo} alt="logo" />
+    <div className={classes["nav-container"]}>
+      <nav>
+        <div className={classes["nav-center"]}>
+          <div className={classes["nav-header"]}>
+            <div className={classes["logo-container"]}>
+              <img src={logo} className={classes.logo} alt="logo" />
+            </div>
+            <button className={classes["nav-toggle"]} onClick={toggleLinks}>
+              {showLinks ? <FaWindowClose /> : <FaBars />}
+            </button>
           </div>
-          <button className={classes["nav-toggle"]} onClick={toggleLinks}>
-            {showLinks ? <FaWindowClose /> : <FaBars />}
-          </button>
-        </div>
-        <div className={classes["links-container"]} ref={linksContainerRef}>
-          <ul className={classes.links} ref={linksRef}>
-            {links.map((link) => {
-              const { id, url, text } = link;
+          <div className={classes["links-container"]} ref={linksContainerRef}>
+            <ul className={classes.links} ref={linksRef}>
+              {links.map((link) => {
+                const { id, url, text } = link;
+                return (
+                  <li key={id}>
+                    <a href={url}>{text}</a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <ul className={classes["social-icons"]}>
+            {social.map((socialIcon) => {
+              const { id, url, icon } = socialIcon;
               return (
                 <li key={id}>
-                  <a href={url}>{text}</a>
+                  <a href={url}>{icon}</a>
                 </li>
               );
             })}
           </ul>
         </div>
-        <ul className={classes["social-icons"]}>
-          {social.map((socialIcon) => {
-            const { id, url, icon } = socialIcon;
-            return (
-              <li key={id}>
-                <a href={url}>{icon}</a>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 

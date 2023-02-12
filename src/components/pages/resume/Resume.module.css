@@ -12,15 +12,11 @@
 }
 
 .resume {
-  padding-top: 72px; /* 10px */
   justify-content: center;
   width: 100vw;
   max-width: 1170px;
   margin: 0 auto;
 }
 
-.resume-page {
-    display: block;
-    width: 200px;
-}
+
 

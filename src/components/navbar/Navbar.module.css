@@ -15,6 +15,11 @@ nav {
   position: fixed;
   width: 100vw;
   z-index: 2;
+  height: 72px;
+}
+.nav-container {
+    position: relative;
+    height: 72px;
 }
 .nav-header {
   display: flex;
@@ -45,6 +50,8 @@ nav {
   display: block;
   padding: 0.5rem 1rem;
   transition: var(--transition);
+  font-weight: bold;
+  margin-left: auto;
 }
 .links a:hover {
   background: var(--clr-primary-8);
@@ -57,6 +64,7 @@ nav {
 .links-container {
   height: 0;
   overflow: hidden;
+  background:hsla(210, 36%, 96%, 80%);
   transition: var(--transition);
 }
 .show-container {
