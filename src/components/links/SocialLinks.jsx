@@ -7,7 +7,7 @@ const SocialLinks = (props) => {
     <ul className={props.parentClass}>
         {socialLinks.map((icon) => {
             return (
-                <SocialLink key={icon.id} href={icon.href} icon={icon.icon} itemClass={props.itemClass}/>
+                <SocialLink key={icon.id} href={icon.url} icon={icon.icon} itemClass={props.itemClass}/>
             )
         })}
     </ul>

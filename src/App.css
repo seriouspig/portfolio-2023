@@ -53,6 +53,22 @@ Global Styles
 ===============
 */
 
+.vertical-timeline-element-title {
+  font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+.vertical-timeline-element-subtitle {
+    margin-top: 0.2rem !important;
+    letter-spacing: 0rem;
+}
+.vertical-timeline-element-content {
+  padding: 1rem !important;
+}
+.vertical-timeline-element-content p {
+  line-height: 1.5 !important;
+  font-size: 0.8rem !important;
+}
+
 *,
 ::after,
 ::before {
@@ -165,7 +181,7 @@ p {
 }
 /* added during recording */
 
-.underline {
+/* .underline {
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
@@ -175,6 +191,5 @@ p {
 }
 
 .section-title {
-  margin-bottom: 4rem;
   text-align: center;
-}
+} */
