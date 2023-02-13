@@ -1,0 +1,36 @@
+.home-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: yellow;
+  max-width: 1170px;
+}
+
+.image-container {
+  width: 100vw;
+  height: 100vw;
+  background: violet;
+}
+
+.info-container {
+  width: 100vw;
+  height: 100vw;
+}
+
+@media screen and (min-width: 800px) {
+  .home-container {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .image-container {
+    width: 50vw;
+    height: 50vw;
+    max-width: 585px;
+  }
+
+  .info-container {
+    width: 50vw;
+    height: 50vw;
+    max-width: 585px;
+  }
+}

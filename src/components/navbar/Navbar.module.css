@@ -42,6 +42,10 @@ nav {
 .logo {
   height: 40px;
 }
+.links {
+    position: relative;
+    z-index: 100;
+}
 .links a {
   color: var(--clr-grey-3);
   font-size: 1rem;
@@ -52,6 +56,8 @@ nav {
   transition: var(--transition);
   font-weight: bold;
   margin-left: auto;
+  z-index: 100;
+  position: relative;
 }
 .links a:hover {
   background: var(--clr-primary-8);
@@ -66,9 +72,12 @@ nav {
   overflow: hidden;
   background:hsla(210, 36%, 96%, 90%);
   transition: var(--transition);
+  position: relative;
+  z-index: 100;
 }
 .show-container {
   height: 10rem;
+  z-index: 100;
 }
 @media screen and (min-width: 800px) {
   .nav-center {

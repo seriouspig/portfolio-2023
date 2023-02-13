@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, useLayoutEffect } from "react";
 import { FaBars, FaWindowClose } from "react-icons/fa";
 import { pageLinks, socialLinks } from "../../data";
-import logo from "../../assets/logos/logo.svg";
+import logo from "../../assets/logos/logo_piotr.svg";
 import classes from "./Navbar.module.css"
 
 const Navbar = () => {
@@ -38,6 +38,7 @@ const Navbar = () => {
           <div className={classes["nav-header"]}>
             <div className={classes["logo-container"]}>
               <img src={logo} className={classes.logo} alt="logo" />
+
             </div>
             <button className={classes["nav-toggle"]} onClick={toggleLinks}>
               {showLinks ? <FaWindowClose /> : <FaBars />}

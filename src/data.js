@@ -13,8 +13,8 @@ export const pageLinks = [
   },
   {
     id: 3,
-    url: "/projects",
-    text: "projects",
+    url: "/portfolio",
+    text: "portfolio",
   },
   {
     id: 4,

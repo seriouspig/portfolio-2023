@@ -1,10 +1,19 @@
-import React from 'react'
-import classes from "./Home.module.css"
+import React from "react";
+import classes from "./Home.module.css";
+import Type from './Type';
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <div className={classes["home-container"]}>
+        <div className={classes["info-container"]}>
+          <Type />
+        </div>
 
-export default Home
+        <div className={classes["image-container"]}></div>
+      </div>
+    </>
+  );
+};
+
+export default Home;
