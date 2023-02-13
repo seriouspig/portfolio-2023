@@ -78,7 +78,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-white);
+  background: var(--clr-grey-9);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -178,6 +178,9 @@ p {
   .section-center {
     width: 95vw;
   }
+  .vertical-timeline-element-content {
+  padding: 1.5rem !important;
+}
 }
 /* added during recording */
 
