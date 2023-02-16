@@ -8,11 +8,12 @@ import { MdWork, MdSchool } from "react-icons/md";
 import { FaKeyboard } from "react-icons/fa";
 import { BsBuilding } from "react-icons/bs";
 import Title from '../../Title';
+import Skills from './Skills'
 
 const About = () => {
   return (
     <>
-      <Title title="Skills" />
+      <Skills />
       <Title title="Professional history" />
       <VerticalTimeline>
         <VerticalTimelineElement
