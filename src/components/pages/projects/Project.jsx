@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaHome ,FaGithub} from "react-icons/fa";
+import { MdStayCurrentLandscape } from 'react-icons/md';
 import project_1_img from "../../../assets/images/project-1.jpeg"
 import "./Project.css"
 
 const Project = () => {
+    const [isActive, setIsActive] = useState(false);
+
+        const handleClick = (event) => {
+            console.log("Is active is: " + isActive);
+            setIsActive(current => !current)
+            
+        }
+
   return (
-    <div className="card">
+    <div className="card" >
+      <button onClick={handleClick}>Click me</button>
       {/* <!-- front of the card --> */}
       <div className="card-side card-front">
         <img src={project_1_img} alt="project image" />

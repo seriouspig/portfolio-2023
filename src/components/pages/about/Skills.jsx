@@ -5,9 +5,9 @@ import Skill from "./Skill";
 
 const Skills = () => {
   return (
-    <section class="section skills">
+    <section className="section skills">
       <Title title="skills" />
-      <div class="section-center skills-center">
+      <div className="section-center skills-center">
         <article>
           <h3>frontend</h3>
           <Skill name="HTML/CSS" percentage="90%" />

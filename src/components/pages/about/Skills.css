@@ -45,7 +45,7 @@ Skills
   position: absolute;
   top: 0;
   left: 0;
-  animation: 3s ease-out 0s 1 skillsRise;
+  animation: 2s ease-out 0s 1 skillsRise;
   animation-fill-mode: forwards;
   background: var(--clr-primary-5);
   height: 100%;
@@ -53,13 +53,14 @@ Skills
   border-radius: var(--radius);
 }
 .skill-text-bar {
-    position: relative;
-      top: -2.75rem;
+  position: relative;
+  height: 1rem;
+  top: -3rem;
 }
 
 .skill-text {
   position: absolute;
-  animation: 3s ease-out 0s 1 skillsSlide;
+  animation: 2s ease-out 0s 1 skillsSlide;
   animation-fill-mode: forwards;
   transform: translateX(-50%);
 }
@@ -83,9 +84,11 @@ Skills
     left: 0%;
     opacity: 0;
   }
+  80% {
+      opacity : 0;
+  }
   100% {
     left: 100%;
     opacity: 1;
   }
 }
-
