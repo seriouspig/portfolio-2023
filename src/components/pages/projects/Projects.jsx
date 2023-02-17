@@ -1,35 +1,32 @@
-import React, { useState } from 'react'
-import Title from '../../Title'
-import Project from './Project'
-import millionaires_img from "../../../assets/images/projects/wwtbam.png"
+import React, { useState } from "react";
+import Title from "../../Title";
+import Project from "./Project";
+import millionaires_img from "../../../assets/images/projects/wwtbam.png";
 import grooooaar_img from "../../../assets/images/projects/grooooaar.gif";
 import idefender_img from "../../../assets/images/projects/idefender.gif";
 import ward_img from "../../../assets/images/projects/theward.png";
-import "./Projects.css"
+import "./Projects.css";
 
 const Projects = () => {
-        const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
-        
-    const isTouchDevice = () => {
-      return (
-        "ontouchstart" in window ||
-        navigator.maxTouchPoints > 0 ||
-        navigator.msMaxTouchPoints > 0
-      );
+  const isTouchDevice = () => {
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  };
+
+  console.log(isTouchDevice());
+
+  const handleClick = (event) => {
+    if (!isActive && isTouchDevice() === true) {
+      event.preventDefault();
+      setIsActive((current) => !current);
     }
-
-    console.log(isTouchDevice())
-
-
-        const handleClick = (event) => {
-            if (!isActive && isTouchDevice() === true) {
-                event.preventDefault();
-                setIsActive((current) => !current);
-            }
-          console.log("Is active is: " + isActive);
-          
-        };
+    console.log("Is active is: " + isActive);
+  };
 
   return (
     <section className="section projects">
@@ -66,19 +63,15 @@ const Projects = () => {
           </article>
         </a>
         {/* <!-- single project --> */}
-        <a href="projects.html" className="project-2">
-          <article className="project">
-            <img src={grooooaar_img} className="project-img" alt="project image" />
-            <div className="project-info">
-              <h4>project title</h4>
-              <p>client name</p>
-            </div>
-          </article>
-        </a>
+        <Project image={millionaires_img} title="Millionaires" info="Group project developed during the CodeClan boot camp course. Based on the TV show – 'Who wants to be a millionaire'."/>
         {/* <!-- single project --> */}
         <a href="projects.html" className="project-3">
           <article className="project">
-            <img src={idefender_img} className="project-img" alt="project image" />
+            <img
+              src={idefender_img}
+              className="project-img"
+              alt="project image"
+            />
             <div className="project-info">
               <h4>project title</h4>
               <p>client name</p>
@@ -98,6 +91,6 @@ const Projects = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Projects
+export default Projects;

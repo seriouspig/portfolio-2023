@@ -76,8 +76,13 @@ Blog
   gap: 3rem 1rem;
 }
 
-
-
-@media (hover: none) and (pointer: coarse) {
-    /* ... */
+.project-info p {
+  font-size: 0.8rem;
 }
+
+.btn-live {
+  letter-spacing: 1;
+}
+
+
+
