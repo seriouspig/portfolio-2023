@@ -18,23 +18,23 @@ const Project = (props) => {
         }
 
   return (
-    <a
-      onClick={handleClick}
-      href="projects.html"
-      target="_blank"
-      className="project-1"
-    >
+    <div className="project-1">
       <article className="project">
         <img src={props.image} className="project-img" alt="project image" />
         <div className="project-info">
           <h4>{props.title}</h4>
           <p>{props.info}</p>
-          <button className="btn btn-live">
+          <a
+            className="btn btn-live"
+            onClick={handleClick}
+            href="projects.html"
+            target="_blank"
+          >
             <BiLinkExternal /> &nbsp; View Project
-          </button>
+          </a>
         </div>
       </article>
-    </a>
+    </div>
   );
 }
 

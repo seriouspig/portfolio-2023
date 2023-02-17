@@ -44,50 +44,29 @@ const Projects = () => {
       </div>
       <div className="projects-center section-center">
         {/* <!-- single project --> */}
-        <a
-          onClick={handleClick}
-          href="projects.html"
-          target="_blank"
-          className="project-1"
-        >
-          <article className="project">
-            <img
-              src={millionaires_img}
-              className="project-img"
-              alt="project image"
-            />
-            <div className="project-info">
-              <h4>project title</h4>
-              <p>client name</p>
-            </div>
-          </article>
-        </a>
+        <Project
+          image={idefender_img}
+          title="Id-efender"
+          info="A solo project developed as part of my Game Development Course at Edinburgh College. A spin on the 1981 Atari’s classic “Defender”."
+        />
         {/* <!-- single project --> */}
-        <Project image={millionaires_img} title="Millionaires" info="Group project developed during the CodeClan boot camp course. Based on the TV show – 'Who wants to be a millionaire'."/>
+        <Project
+          image={millionaires_img}
+          title="Millionaires"
+          info="Group project developed during the CodeClan boot camp course. Based on the TV show – 'Who wants to be a millionaire'."
+        />
         {/* <!-- single project --> */}
-        <a href="projects.html" className="project-3">
-          <article className="project">
-            <img
-              src={idefender_img}
-              className="project-img"
-              alt="project image"
-            />
-            <div className="project-info">
-              <h4>project title</h4>
-              <p>client name</p>
-            </div>
-          </article>
-        </a>
+        <Project
+          image={ward_img}
+          title="The Ward"
+          info="Final group project at CodeClan, developed using React.js and Java Spring Boot. Inspired by Bullfrog’s 1997 hit Theme Hospital"
+        />
         {/* <!-- single project --> */}
-        <a href="projects.html" className="project-4">
-          <article className="project">
-            <img src={ward_img} className="project-img" alt="project image" />
-            <div className="project-info">
-              <h4>project title</h4>
-              <p>client name</p>
-            </div>
-          </article>
-        </a>
+        <Project
+          image={grooooaar_img}
+          title="GROOOOARR"
+          info="Another entry for the itch.io Nokia 3310 game jam. Interesting enemy AI. A full-res version for mobile devces is in the works"
+        />
       </div>
     </section>
   );

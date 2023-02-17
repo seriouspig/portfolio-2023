@@ -51,6 +51,8 @@ Projects
   transform: translate(-50%, -50%);
   transition: var(--transition);
   opacity: 0;
+  min-width: 250px;
+  z-index: 1;
 }
 .project-info p {
   /* text-transform: capitalize; */
@@ -127,7 +129,11 @@ Projects
   }
 } */
 
-.btn-live {
-  letter-spacing: 1 !important;
+/* .btn-live {
+  z-index: 99;
 }
+
+.project-info {
+  z-index: 100;
+} */
 

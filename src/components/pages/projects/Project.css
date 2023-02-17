@@ -81,7 +81,15 @@ Blog
 }
 
 .btn-live {
-  letter-spacing: 1;
+  letter-spacing: 0 ;
+  visibility: hidden;
+}
+.btn-live:hover {
+  cursor: pointer;
+}
+
+.project:hover .btn-live {
+  visibility: visible;
 }
 
 
