@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import classes from "./Home.module.css";
 import Type from "./Type";
 import { ReactComponent as PiotrSvg } from "../../../assets/logos/test.svg";
-import DrawSVG from "react-svg-drawing";
+
 
 const Home = () => {
 
@@ -19,9 +19,9 @@ const Home = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
               provident, quod voluptatum porro ea accusantium ex ad molestiae.
             </p>
-            <DrawSVG duration="10000" width="100%" target=".st1">
+
                 <PiotrSvg />
-            </DrawSVG>
+
 
           </div>
         </div>
