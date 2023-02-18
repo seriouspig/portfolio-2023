@@ -15,9 +15,13 @@
   background: violet;
 }
 
+
+
 .info-container {
   width: 100vw;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #Layer_1 {
@@ -39,6 +43,10 @@
     width: 50vw;
     height: 50vw;
     max-width: 585px;
+    flex-direction: row;
+  }
+  .landing-image-container {
+    min-width: 600px;
   }
 }
 
@@ -82,4 +90,9 @@
   100% {
     stroke-dashoffset: 2000;
   }
+}
+
+.landing-image-container {
+  padding: 1rem;
+  padding-top: 2rem;
 }
