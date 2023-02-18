@@ -1,9 +1,12 @@
+@import "../../../App.css";
+
 .home-container {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background: yellow;
+  background: var(--clr-primary-8);
   max-width: 1170px;
+  align-items: center;
 }
 
 .image-container {
@@ -14,7 +17,11 @@
 
 .info-container {
   width: 100vw;
-  height: 100vw;
+  min-height: 100vh;
+}
+
+#Layer_1 {
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 800px) {
@@ -55,6 +62,15 @@
 
 .path3 {
   stroke: black;
+  fill: none;
+  stroke-dashoffset: 1800;
+  stroke-dasharray: 1000;
+  animation: dash1 2s linear;
+  animation-fill-mode: forwards;
+}
+
+.st0 {
+    stroke: black;
   fill: none;
   stroke-dashoffset: 1800;
   stroke-dasharray: 1000;
