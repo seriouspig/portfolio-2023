@@ -121,14 +121,8 @@ Hero
 }
 
 .selector-screen-1:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
-
-
-
-
-
 
 .static-container-2 {
   position: absolute;
@@ -155,9 +149,9 @@ Hero
   /* border: 1px solid blue; */
   perspective: 300px;
   perspective-origin: 50% 160%;
-  top: 9%;
-  left: 14%;
-  transform: scaleX(1);
+  top: 09%;
+  left: 13.5%;
+  transform: scaleX(1.05);
 }
 
 .static_3 {
@@ -165,3 +159,21 @@ Hero
   transform-style: preserve-3d;
   transform: rotateY(20deg);
 }
+
+.selector-screen-3 {
+
+  opacity: 0;
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  z-index: 5;
+  top: 6%;
+  left: 12.5%;
+  z-index: 5;
+
+}
+
+.selector-screen-3:hover {
+    cursor: pointer;
+}
+

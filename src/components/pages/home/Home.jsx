@@ -8,10 +8,13 @@ import tvStatic1 from "../../../assets/images/tv_static_1.gif";
 import pcScreenSaver2 from "../../../assets/images/windows.gif";
 import macScreenSaver3 from "../../../assets/images/mac.gif";
 import tvGame1 from "../../../assets/images/projects/idefender.gif"
+import macCoding3 from "../../../assets/images/coding.gif";
 
 
 const Home = () => {
   const [isShown, setIsShown] = useState(false);
+  const [isShown2, setIsShown2] = useState(false);
+  const [isShown3, setIsShown3] = useState(false);
 
   return (
     <>
@@ -33,9 +36,19 @@ const Home = () => {
           <div className="static-container-2">
             <img className="static_2" src={pcScreenSaver2} alt="" />
           </div>
+          <div
+            className="selector-screen-3"
+            onMouseEnter={() => setIsShown3(true)}
+            onMouseLeave={() => setIsShown3(false)}
+          ></div>
+          <div className="static-container-3 active">
+            <img className="static_3 coding_3" src={macCoding3} alt="" />
+          </div>
+          {!isShown3 && (
           <div className="static-container-3">
             <img className="static_3" src={macScreenSaver3} alt="" />
           </div>
+          )}
           <img src={landingImage1} class="hero-photo" alt="john doe" />
         </article>
         <article className="hero-info">
