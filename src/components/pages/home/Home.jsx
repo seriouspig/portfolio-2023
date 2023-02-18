@@ -14,7 +14,7 @@ import pcSketchup2 from "../../../assets/images/sketchup.gif";
 
 const Home = () => {
   const [isShown, setIsShown] = useState(false);
-  const [isShown2, setIsShown2] = useState(true);
+  const [isShown2, setIsShown2] = useState(false);
   const [isShown3, setIsShown3] = useState(false);
 
   return (

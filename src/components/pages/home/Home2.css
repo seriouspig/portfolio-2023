@@ -33,7 +33,6 @@ Hero
 .hero-photo {
   /* max-width: 25rem;
   max-height: 30rem; */
-  -o-object-fit: cover;
   object-fit: cover;
   border-radius: var(--radius);
   position: relative;
@@ -67,16 +66,21 @@ Hero
   position: absolute;
   width: 30%;
   /* border: 1px solid blue; */
+  -webkit-perspective: 500px;
   perspective: 500px;
+  -webkit-perspective-origin: 0% 50%;
   perspective-origin: 0% 50%;
   top: 44%;
   left: 10%;
+  -webkit-transform: scaleX(1.2);
   transform: scaleX(1.2);
 }
 
 .static_1 {
   position: relative;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transform: rotateY(25deg);
   transform: rotateY(25deg);
   opacity: 1;
 }
@@ -99,6 +103,7 @@ Hero
 /* Gameplay 1 */
 
 .active {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
   top: 46%;
   opacity: 1;
@@ -128,7 +133,9 @@ Hero
   position: absolute;
   width: 31%;
   /* border: 1px solid blue; */
+  -webkit-perspective: 500px;
   perspective: 500px;
+  -webkit-perspective-origin: 80% 70%;
   perspective-origin: 80% 70%;
   top: 26%;
   left: 50%;
@@ -137,15 +144,21 @@ Hero
 }
 .static-container-2.active {
   top: 26%;
+  -webkit-perspective: 1000px;
   perspective: 1000px;
-  
+
+  -webkit-perspective-origin: 80% 100%;
+
   perspective-origin: 80% 100%;
+  -webkit-transform: rotateY(-30deg) scaleY(1.1) scaleX(1.1);
   transform: rotateY(-30deg) scaleY(1.1) scaleX(1.1);
 }
 
 .static_2 {
   position: relative;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transform: rotateY(-15deg);
   transform: rotateY(-15deg);
   opacity: 1;
 }
@@ -154,16 +167,21 @@ Hero
   position: absolute;
   width: 30%;
   /* border: 1px solid blue; */
+  -webkit-perspective: 300px;
   perspective: 300px;
+  -webkit-perspective-origin: 50% 160%;
   perspective-origin: 50% 160%;
   top: 09%;
   left: 13.5%;
+  -webkit-transform: scaleX(1.05);
   transform: scaleX(1.05);
 }
 
 .static_3 {
   position: relative;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transform: rotateY(20deg);
   transform: rotateY(20deg);
 }
 
@@ -193,5 +211,5 @@ Hero
 }
 
 .selector-screen-2:hover {
-    cursor:pointer;
+  cursor: pointer;
 }
