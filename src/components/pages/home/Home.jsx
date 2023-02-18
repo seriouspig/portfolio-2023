@@ -5,6 +5,8 @@ import { ReactComponent as PiotrSvg } from "../../../assets/logos/test.svg";
 import { ReactComponent as PiotrSketchSvg } from "../../../assets/logos/sketch.svg";
 import landingImage1 from "../../../assets/images/landing_page_3_final.png"
 import tvStatic1 from "../../../assets/images/tv_static_1.gif";
+import pcScreenSaver2 from "../../../assets/images/windows.gif";
+import macScreenSaver3 from "../../../assets/images/mac.gif";
 import tvGame1 from "../../../assets/images/projects/idefender.gif"
 
 
@@ -28,6 +30,12 @@ const Home = () => {
               <img className="static_1 game_1" src={tvGame1} alt="" />
             </div>
           )}
+          <div className="static-container-2">
+            <img className="static_2" src={pcScreenSaver2} alt="" />
+          </div>
+          <div className="static-container-3">
+            <img className="static_3" src={macScreenSaver3} alt="" />
+          </div>
           <img src={landingImage1} class="hero-photo" alt="john doe" />
         </article>
         <article className="hero-info">
