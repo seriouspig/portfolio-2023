@@ -1,42 +1,33 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Home2.css";
 import Type from "./Type";
 import { ReactComponent as PiotrSvg } from "../../../assets/logos/test.svg";
 import { ReactComponent as PiotrSketchSvg } from "../../../assets/logos/sketch.svg";
-import landingImage1 from "../../../assets/images/landing_page_3.png"
+import landingImage1 from "../../../assets/images/landing_page_3_final.png"
 import tvStatic1 from "../../../assets/images/tv_static_1.gif";
+import tvGame1 from "../../../assets/images/projects/idefender.gif"
 
 
 const Home = () => {
-
+  const [isShown, setIsShown] = useState(false);
 
   return (
     <>
-      {/* <div className="home-container">
-        <div className="info-container">
-          <div className="landing-image-container">
-            <img className="landing-img" src={landingImage1} alt="" />
-            <div className="static-container">
-              <img className="static_1" src={tvStatic1} alt="" />
-            </div>
-          </div>
-          <div className="section-title">
-            <h2>Hello I'm Piotr Gryko</h2>
-            <div className="underline"></div>
-            <Type />
-            <p className="projects-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              provident, quod voluptatum porro ea accusantium ex ad molestiae.
-            </p>
-          </div>
-        </div>
-      </div> */}
-
       <div className="section-center hero-center">
         <article class="hero-img">
+          <div
+            className="selector-screen-1"
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+          ></div>
           <div className="static-container">
             <img className="static_1" src={tvStatic1} alt="" />
           </div>
+          {isShown && (
+            <div className="static-container active">
+              <img className="static_1 game_1" src={tvGame1} alt="" />
+            </div>
+          )}
           <img src={landingImage1} class="hero-photo" alt="john doe" />
         </article>
         <article className="hero-info">
