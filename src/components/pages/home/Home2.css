@@ -126,14 +126,21 @@ Hero
 
 .static-container-2 {
   position: absolute;
-  width: 30%;
+  width: 31%;
   /* border: 1px solid blue; */
   perspective: 500px;
-  perspective-origin: 80% 100%;
+  perspective-origin: 80% 70%;
   top: 26%;
   left: 50%;
-  transform: scaleX(0.7);
-  transform: scaleY(1.05);
+  /* transform: scaleX(0.9); */
+  /* transform: scaleY(1.05); */
+}
+.static-container-2.active {
+  top: 26%;
+  perspective: 1000px;
+  
+  perspective-origin: 80% 100%;
+  transform: rotateY(-30deg) scaleY(1.1) scaleX(1.1);
 }
 
 .static_2 {
@@ -161,7 +168,6 @@ Hero
 }
 
 .selector-screen-3 {
-
   opacity: 0;
   width: 30%;
   height: 30%;
@@ -170,10 +176,22 @@ Hero
   top: 6%;
   left: 12.5%;
   z-index: 5;
-
 }
 
 .selector-screen-3:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
+.selector-screen-2 {
+  width: 28%;
+  height: 32%;
+  position: absolute;
+  z-index: 5;
+  top: 24%;
+  left: 51%;
+  z-index: 5;
+}
+
+.selector-screen-2:hover {
+    cursor:pointer;
+}

@@ -9,11 +9,12 @@ import pcScreenSaver2 from "../../../assets/images/windows.gif";
 import macScreenSaver3 from "../../../assets/images/mac.gif";
 import tvGame1 from "../../../assets/images/projects/idefender.gif"
 import macCoding3 from "../../../assets/images/coding.gif";
+import pcSketchup2 from "../../../assets/images/sketchup.gif";
 
 
 const Home = () => {
   const [isShown, setIsShown] = useState(false);
-  const [isShown2, setIsShown2] = useState(false);
+  const [isShown2, setIsShown2] = useState(true);
   const [isShown3, setIsShown3] = useState(false);
 
   return (
@@ -33,9 +34,19 @@ const Home = () => {
               <img className="static_1 game_1" src={tvGame1} alt="" />
             </div>
           )}
+          <div
+            className="selector-screen-2"
+            onMouseEnter={() => setIsShown2(true)}
+            onMouseLeave={() => setIsShown2(false)}
+          ></div>
           <div className="static-container-2">
             <img className="static_2" src={pcScreenSaver2} alt="" />
           </div>
+          {isShown2 && (
+            <div className="static-container-2 active">
+              <img className="static_2 sketchup_2" src={pcSketchup2} alt="" />
+            </div>
+          )}
           <div
             className="selector-screen-3"
             onMouseEnter={() => setIsShown3(true)}
@@ -45,9 +56,9 @@ const Home = () => {
             <img className="static_3 coding_3" src={macCoding3} alt="" />
           </div>
           {!isShown3 && (
-          <div className="static-container-3">
-            <img className="static_3" src={macScreenSaver3} alt="" />
-          </div>
+            <div className="static-container-3">
+              <img className="static_3" src={macScreenSaver3} alt="" />
+            </div>
           )}
           <img src={landingImage1} class="hero-photo" alt="john doe" />
         </article>
